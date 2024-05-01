@@ -1,4 +1,5 @@
 <x-layout>
-    <x-slot:title>Halaman About</x-slot:title><br>
-    Haloo, {{ $name }}
+    <x-slot:title>About</x-slot:title><br>
+    <p> Haloo, {{ $name }}</p>
+    fgjfgjgfhjhg
 </x-layout>

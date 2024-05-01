@@ -1,4 +1,4 @@
 <x-layout>
-    <x-slot:title>Halaman Contact</x-slot:title>
-    <p>Halaman Contact</p>
+    <x-slot:title>Contact</x-slot:title>
+    <p>Contact Us!</p>
 </x-layout>
