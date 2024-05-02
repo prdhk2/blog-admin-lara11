@@ -18,3 +18,15 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('contact', ['title' => 'Contact']);
 });
+
+Route::get('/userDetails', function () {
+    return view('contact', ['title' => 'Contact']);
+});
+
+Route::get('/webSetting', function () {
+    return view('contact', ['title' => 'Contact']);
+});
+
+Route::get('/signOut', function () {
+    return view('contact', ['title' => 'Contact']);
+});
