@@ -4,29 +4,33 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    return view('home', ['title' => 'Home Page']);
+    return view('landing_page/home', ['title' => 'Home Page']);
 });
 
 Route::get('/blog', function () {
-    return view('blog', ['title' => 'Blog']);
+    return view('landing_page/blog', ['title' => 'Blog']);
 });
 
 Route::get('/about', function () {
-    return view('about', ['name' => 'Pradhika Setyawan', 'title' => 'About']);
+    return view('landing_page/about', ['name' => 'Pradhika Setyawan', 'title' => 'About']);
 });
 
 Route::get('/contact', function () {
-    return view('contact', ['title' => 'Contact']);
+    return view('landing_page/contact', ['title' => 'Contact']);
 });
 
 Route::get('/userDetails', function () {
-    return view('contact', ['title' => 'Contact']);
+    return view('landing_page/contact', ['title' => 'Contact']);
 });
 
 Route::get('/webSetting', function () {
-    return view('contact', ['title' => 'Contact']);
+    return view('landing_page/contact', ['title' => 'Contact']);
 });
 
 Route::get('/signOut', function () {
-    return view('contact', ['title' => 'Contact']);
+    return view('landing_page/contact', ['title' => 'Contact']);
+});
+
+Route::get('/dashboard', function () {
+    return view('admin/dashboard', ['title' => 'Dashboard']);
 });

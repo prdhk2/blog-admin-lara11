@@ -1,0 +1,11 @@
+a {
+    text-decoration: none !important;
+}
+
+.home-header {
+    display: none !important;
+}
+
+nav {
+    z-index: 1000;
+}
