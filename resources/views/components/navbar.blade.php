@@ -141,7 +141,7 @@
   </div>
     <div class="flex justify-end space-x-4">
         <a href="/" class="text-gray-500">Home</a>
-        <a href="/about" class="text-gray-500">Product</a>
+        <a href="/product" class="text-gray-500">Product</a>
         <a href="#" class="text-gray-500">Trending Product</a>
         <a href="/blog" class="text-gray-500">Blog</a>
         <a href="#" class="text-gray-500">Discount</a>

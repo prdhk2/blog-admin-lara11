@@ -11,8 +11,8 @@ Route::get('/blog', function () {
     return view('public-view/blog', ['title' => 'Blog']);
 });
 
-Route::get('/about', function () {
-    return view('public-view/about', ['name' => 'Pradhika Setyawan', 'title' => 'About']);
+Route::get('/product', function () {
+    return view('public-view/product', ['name' => 'Pradhika Setyawan', 'title' => 'About']);
 });
 
 Route::get('/contact', function () {
@@ -20,11 +20,11 @@ Route::get('/contact', function () {
 });
 
 Route::get('/userDetails', function () {
-    return view('public-view/contact', ['title' => 'Contact']);
+    return view('public-view/user-profile', ['title' => 'Contact']);
 });
 
 Route::get('/webSetting', function () {
-    return view('public-view/contact', ['title' => 'Contact']);
+    return view('public-view/web-setting', ['title' => 'Contact']);
 });
 
 Route::get('/signOut', function () {

@@ -1,80 +1,52 @@
 <x-layout>
-    <div class="header">
-        <x-slot:title>Home Page</x-slot:title>
-    </div>
-    <div class="max-w-auto mx-auto" style="z-index: 999 !important;">
-        <!-- Slider -->
-        <div data-hs-carousel='{
-            "loadingClasses": "opacity-0",
-            "isAutoPlay": true
-        }' class="relative">
-        <div class="hs-carousel relative overflow-hidden w-full min-h-96 bg-white rounded-lg">
-            <div class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
-            <div class="hs-carousel-slide">
-                <div class="flex justify-center h-full bg-gray-100 p-6">
-                <span class="self-center text-4xl text-gray-800 transition duration-700">First slide</span>
+    <x-slot:title>Our Product</x-slot:title><br>
+
+    <!--    start content -->
+    <div class="bg-white dark:bg-gray-800 flex relative z-20 items-center overflow-hidden">
+        <div class="container mx-auto px-6 flex relative py-16">
+            <div class="sm:w-2/3 lg:w-2/5 flex flex-col relative z-20">
+                <span class="w-20 h-2 bg-gray-800 dark:bg-white mb-12">
+                </span>
+                <h1 class="font-bebas-neue uppercase text-6xl sm:text-8xl font-black flex flex-col leading-none text-gray-800">
+                    Be on
+                    <span class="text-5xl sm:text-7xl">
+                        Time
+                    </span>
+                </h1>
+                <p class="text-sm sm:text-base text-gray-700 text-gray-700">
+                    Dimension of reality that makes change possible and understandable. An indefinite and homogeneous environment in which natural events and human existence take place.
+                </p>
+                <div class="flex mt-8">
+                    <a href="/blog" class="uppercase py-2 px-4 rounded-lg  border-2 border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white text-md">
+                        Read more
+                    </a>
                 </div>
             </div>
-            <div class="hs-carousel-slide">
-                <div class="flex justify-center h-full bg-gray-200 p-6">
-                <span class="self-center text-4xl text-gray-800 transition duration-700">Second slide</span>
-                </div>
-            </div>
-            <div class="hs-carousel-slide">
-                <div class="flex justify-center h-full bg-gray-300 p-6">
-                <span class="self-center text-4xl text-gray-800 transition duration-700">Third slide</span>
-                </div>
-            </div>
+            <div class="hidden sm:block sm:w-1/3 lg:w-3/5 relative">
+                <img src="https://www.tailwind-kit.com/images/object/10.png" class="max-w-xs md:max-w-sm m-auto"/>
             </div>
         </div>
+    </div>
+<!--end content -->
 
-        <button type="button" class="hs-carousel-prev hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 start-0 inline-flex justify-center items-center w-[46px] h-full text-gray-800 hover:bg-gray-800/10 rounded-s-lg">
-            <span class="text-2xl" aria-hidden="true">
-            <svg class="flex-shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="m15 18-6-6 6-6"></path>
+<!-- start main product carrousel -->
+<div class="grid grid-cols-2 mt-4 bg-white rounded-2xl text-center p-2 justify-center">
+    <div class="col-span-1">
+        <h3 class="text-left">Category 1</h3>
+    </div>
+    <div class="col-span-1 flex justify-end">
+        <button class="flex items-center justify-center rounded-full bg-gray-300 w-8 h-8 m-2">  <!-- previous carrousel -->
+            <svg class="w-6 h-6 text-gray-800 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
             </svg>
-            </span>
-            <span class="sr-only">Previous</span>
-        </button>
-        <button type="button" class="hs-carousel-next hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 end-0 inline-flex justify-center items-center w-[46px] h-full text-gray-800 hover:bg-gray-800/10 rounded-e-lg">
-            <span class="sr-only">Next</span>
-            <span class="text-2xl" aria-hidden="true">
-            <svg class="flex-shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="m9 18 6-6-6-6"></path>
-            </svg>
-            </span>
-        </button>
-
-        <div class="hs-carousel-pagination flex justify-center absolute bottom-3 start-0 end-0 space-x-2">
-            <span class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer"></span>
-            <span class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer"></span>
-            <span class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer"></span>
-        </div>
+        </button>                
+        <button class="flex items-center justify-center rounded-full bg-gray-300 w-8 h-8 m-2"> <!-- next carrousel -->
+            <svg class="w-6 h-6 text-gray-800 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+            </svg>                      
+        </button>                
     </div>
-    <!-- End Slider -->
-    
-    <!-- sidebar -->
-    @include('public-view.sidebar')
-
-        <div class="grid grid-cols-2 mt-4 bg-white rounded-2xl text-center p-2 justify-center">
-        <div class="col-span-1">
-            <h3 class="text-left">Our Top Product</h3>
-        </div>
-        <div class="col-span-1 flex justify-end">
-            <div class="flex items-center justify-center rounded-full bg-gray-300 w-8 h-8 m-2">
-                <svg class="w-6 h-6 text-gray-800 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
-                </svg>
-            </div>                
-            <div class="flex items-center justify-center rounded-full bg-gray-300 w-8 h-8 m-2">
-                <svg class="w-6 h-6 text-gray-800 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
-                </svg>                      
-            </div>                
-        </div>
-    </div>
-
-<!-- top product content -->
+</div>
 <div class="mx-auto">
     <div class="p-1 flex flex-wrap items-center justify-center">
         <div class="flex-shrink-0 m-6 relative overflow-hidden bg-purple-300 rounded-lg max-w-xs shadow hover:scale-110 ease-in duration-150">
@@ -209,4 +181,5 @@
             </div>
         </div>
     </div>
+<!-- end product carrousel -->
 </x-layout>

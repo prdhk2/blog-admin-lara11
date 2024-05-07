@@ -1,23 +1,33 @@
 <?php
 
-namespace Database\Seeders;
-
-use App\Models\User;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Product;
 
-class DatabaseSeeder extends Seeder
+class ProductSeeder extends Seeder
 {
-    /**
-     * Seed the application's database.
-     */
-    public function run(): void
+    public function run()
     {
-        // User::factory(10)->create();
+        // Contoh data produk
+        $products = [
+            [
+                'name' => 'Peace Lily',
+                'category' => 'Indoor',
+                'price' => '1',
+                'image' => 'https://user-images.githubusercontent.com/2805249/64069899-8bdaa180-cc97-11e9-9b19-1a9e1a254c18.png'
+            ],
+            [
+                'name' => 'Snake Plant',
+                'category' => 'Indoor',
+                'price' => '2',
+                'image' => 'https://example.com/snake_plant.jpg'
+            ],
+            // Tambahkan data produk lainnya sesuai kebutuhan
+        ];
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
+        // Simpan data produk ke dalam database
+        foreach ($products as $productData) {
+            Product::create($productData);
+        }
     }
 }
+
