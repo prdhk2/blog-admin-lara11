@@ -1,4 +1,4 @@
-<x-layout>
+<x-admin-layout>
     <x-slot:title>Dashboard</x-slot:title>
     <h3>Product Items :</h3>
     <br>
@@ -71,4 +71,5 @@
     </div>
 </div>
   <!-- end modal -->
-</x-layout>
+  
+</x-admin-layout>

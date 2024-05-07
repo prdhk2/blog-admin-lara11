@@ -31,6 +31,11 @@ Route::get('/signOut', function () {
     return view('landing_page/contact', ['title' => 'Contact']);
 });
 
+Route::get('/myChart', function () {
+    return view('landing_page/myChart', ['title' => 'Dashboard']);
+});
+
 Route::get('/dashboard', function () {
     return view('admin/dashboard', ['title' => 'Dashboard']);
 });
+

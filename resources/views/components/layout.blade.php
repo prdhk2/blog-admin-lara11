@@ -10,6 +10,7 @@
     [
         'resources/sass/app.scss',
         'resources/css/app.css',
+        'resources/js/app.js',
         'resources/js/app.js'
     ])
     <!-- stylesheets -->
@@ -20,7 +21,7 @@
     <!--script for alpine.js-->
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
-<body class="h-full">
+<body>
     <x-navbar></x-navbar>
 <div class="min-h-full">
 
@@ -37,17 +38,12 @@
     
 </div>
 </body>
+<script src="{{ URL::asset('js/script.js') }}"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
-<script>
-    // Initiate Carousel
-    const carousel = new Flowbite.Carousel("#default-carousel", {
-        autoplay: true,
-        autoplaySpeed: 2000, // 5 seconds
-        loop: true,
-        smooth: true
-    });
-</script>
+<script src="./node_modules/preline/dist/preline.js"></script>
+
+
 </html>
