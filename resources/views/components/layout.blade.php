@@ -23,7 +23,7 @@
 </head>
 <body>
     <x-navbar></x-navbar>
-<div class="min-h-full">
+    <div class="min-h-full">
 
     @if($title != "Home Page" && $title != "Dashboard")
         <x-header>{{ $title }}</x-header>
