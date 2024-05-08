@@ -56,21 +56,174 @@
     <!-- sidebar -->
     @include('public-view.sidebar')
 
-        <div class="grid grid-cols-2 mt-4 bg-white rounded-2xl text-center p-2 justify-center">
+    <div class="grid grid-cols-2 mt-4 bg-white rounded-2xl text-center p-2 justify-center">
         <div class="col-span-1">
             <h3 class="text-left">Our Top Product</h3>
         </div>
         <div class="col-span-1 flex justify-end">
-            <div class="flex items-center justify-center rounded-full bg-gray-300 w-8 h-8 m-2">
+            <button class="flex items-center justify-center rounded-full bg-gray-300 w-8 h-8 m-2">
                 <svg class="w-6 h-6 text-gray-800 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
                 </svg>
-            </div>                
-            <div class="flex items-center justify-center rounded-full bg-gray-300 w-8 h-8 m-2">
+            </button>                
+            <button class="flex items-center justify-center rounded-full bg-gray-300 w-8 h-8 m-2">
                 <svg class="w-6 h-6 text-gray-800 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
                 </svg>                      
-            </div>                
+            </button>                
+        </div>
+    </div>
+
+<!-- top product content -->
+<div class="mx-auto">
+    <div class="p-1 flex flex-wrap items-center justify-center">
+        <div class="flex-shrink-0 m-6 relative overflow-hidden bg-purple-300 rounded-lg max-w-xs shadow hover:scale-110 ease-in duration-150">
+            <svg class="absolute bottom-0 left-0 mb-8" viewBox="0 0 375 283" fill="none"
+                style="transform: scale(1.5); opacity: 0.1;">
+                <rect x="159.52" y="175" width="152" height="152" rx="8" transform="rotate(-45 159.52 175)" fill="white" />
+                <rect y="107.48" width="152" height="152" rx="8" transform="rotate(-45 0 107.48)" fill="white" />
+            </svg>
+            <div class="relative pt-10 h-full bg-white px-10 flex items-center justify-center">
+                <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3"
+                    style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;">
+                </div>
+                <img class="relative w-40" src="https://user-images.githubusercontent.com/2805249/64069899-8bdaa180-cc97-11e9-9b19-1a9e1a254c18.png" alt="">
+            </div>
+            <div class="relative text-white px-6 pb-6 mt-6">
+                <span class="block bg-white rounded-full text-orange-500 text-xs font-bold px-3 py-2 leading-none flex items-center">Rp. 1</span>
+                <span class="block opacity-75 -mb-1">Indoor</span>
+                <div class="flex justify-between">
+                    <span class="block font-semibold text-xl">Peace Lily</span>
+                    <span>
+                        <button class="rounded-full bg-white text-center p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-orange-600 w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                              </svg>                              
+                        </button>
+
+                        <button class="rounded-full bg-white text-center p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-orange-600 w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="flex-shrink-0 m-6 relative overflow-hidden bg-purple-300 rounded-lg max-w-xs shadow hover:scale-110 ease-in duration-150">
+            <svg class="absolute bottom-0 left-0 mb-8" viewBox="0 0 375 283" fill="none"
+                style="transform: scale(1.5); opacity: 0.1;">
+                <rect x="159.52" y="175" width="152" height="152" rx="8" transform="rotate(-45 159.52 175)" fill="white" />
+                <rect y="107.48" width="152" height="152" rx="8" transform="rotate(-45 0 107.48)" fill="white" />
+            </svg>
+            <div class="relative pt-10 h-full bg-white px-10 flex items-center justify-center">
+                <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3"
+                    style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;">
+                </div>
+                <img class="relative w-40" src="https://user-images.githubusercontent.com/2805249/64069899-8bdaa180-cc97-11e9-9b19-1a9e1a254c18.png" alt="">
+            </div>
+            <div class="relative text-white px-6 pb-6 mt-6">
+                <span class="block bg-white rounded-full text-orange-500 text-xs font-bold px-3 py-2 leading-none flex items-center">Rp. 1</span>
+                <span class="block opacity-75 -mb-1">Indoor</span>
+                <div class="flex justify-between">
+                    <span class="block font-semibold text-xl">Peace Lily</span>
+                    <span class="block">
+                        <button class="rounded-full bg-white text-center p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-orange-600 w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                              </svg>                              
+                        </button>
+                        <button class="rounded-full bg-white text-center p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-orange-600 w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="flex-shrink-0 m-6 relative overflow-hidden bg-purple-300 rounded-lg max-w-xs shadow hover:scale-110 ease-in duration-150">
+            <svg class="absolute bottom-0 left-0 mb-8" viewBox="0 0 375 283" fill="none"
+                style="transform: scale(1.5); opacity: 0.1;">
+                <rect x="159.52" y="175" width="152" height="152" rx="8" transform="rotate(-45 159.52 175)" fill="white" />
+                <rect y="107.48" width="152" height="152" rx="8" transform="rotate(-45 0 107.48)" fill="white" />
+            </svg>
+            <div class="relative pt-10 h-full bg-white px-10 flex items-center justify-center">
+                <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3"
+                    style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;">
+                </div>
+                <img class="relative w-40" src="https://user-images.githubusercontent.com/2805249/64069899-8bdaa180-cc97-11e9-9b19-1a9e1a254c18.png" alt="">
+            </div>
+            <div class="relative text-white px-6 pb-6 mt-6">
+                <span class="block bg-white rounded-full text-orange-500 text-xs font-bold px-3 py-2 leading-none flex items-center">Rp. 1</span>
+                <span class="block opacity-75 -mb-1">Indoor</span>
+                <div class="flex justify-between">
+                    <span class="block font-semibold text-xl">Peace Lily</span>
+                    <span>
+                        <button class="rounded-full bg-white text-center p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-orange-600 w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                              </svg>                              
+                        </button>
+
+                        <button class="rounded-full bg-white text-center p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-orange-600 w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="flex-shrink-0 m-6 relative overflow-hidden bg-purple-300 rounded-lg max-w-xs shadow hover:scale-110 ease-in duration-150">
+            <svg class="absolute bottom-0 left-0 mb-8" viewBox="0 0 375 283" fill="none"
+                style="transform: scale(1.5); opacity: 0.1;">
+                <rect x="159.52" y="175" width="152" height="152" rx="8" transform="rotate(-45 159.52 175)" fill="white" />
+                <rect y="107.48" width="152" height="152" rx="8" transform="rotate(-45 0 107.48)" fill="white" />
+            </svg>
+            <div class="relative pt-10 h-full bg-white px-10 flex items-center justify-center">
+                <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3"
+                    style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;">
+                </div>
+                <img class="relative w-40" src="https://user-images.githubusercontent.com/2805249/64069899-8bdaa180-cc97-11e9-9b19-1a9e1a254c18.png" alt="">
+            </div>
+            <div class="relative text-white px-6 pb-6 mt-6">
+                <span class="block bg-white rounded-full text-orange-500 text-xs font-bold px-3 py-2 leading-none flex items-center">Rp. 1</span>
+                <span class="block opacity-75 -mb-1">Indoor</span>
+                <div class="flex justify-between">
+                    <span class="block font-semibold text-xl">Peace Lily</span>
+                    <span>
+                        <button class="rounded-full bg-white text-center p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-orange-600 w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                              </svg>                              
+                        </button>
+
+                        <button class="rounded-full bg-white text-center p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-orange-600 w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grid grid-cols-2 mt-4 bg-white rounded-2xl text-center p-2 justify-center">
+        <div class="col-span-1">
+            <h3 class="text-left">Trending Product</h3>
+        </div>
+        <div class="col-span-1 flex justify-end">
+            <button class="flex items-center justify-center rounded-full bg-gray-300 w-8 h-8 m-2">
+                <svg class="w-6 h-6 text-gray-800 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+                </svg>
+            </button>                
+            <button class="flex items-center justify-center rounded-full bg-gray-300 w-8 h-8 m-2">
+                <svg class="w-6 h-6 text-gray-800 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+                </svg>                      
+            </button>                
         </div>
     </div>
 

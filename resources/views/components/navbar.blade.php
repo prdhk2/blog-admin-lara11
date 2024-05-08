@@ -96,7 +96,9 @@
       </div>
     </div>
   </div>
-
+  <div class="w-full">
+    @include('components.promos')
+  </div>
 
   <!-- Mobile Menu -->
   <div x-show="isOpen" class="md:hidden" id="mobile-menu">
