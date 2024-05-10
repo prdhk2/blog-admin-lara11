@@ -16,8 +16,8 @@ return new class extends Migration
             $table->string('name');
             $table->string('type');
             $table->string('color');
-            $table->string('color');
             $table->decimal('price', 8, 2);
+            $table->date('date');
             $table->timestamps();
         });
     }

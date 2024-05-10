@@ -25,10 +25,9 @@
                 @foreach($products as $data)
                 <tr>
                     <td>{{ $data->id }}</td>
-                    <td>{{ $data['name'] }}</td>
+                    <td>{{ $data->name }}</td>
                     <td>{{ $data->type }}</td>
                     <td>{{ $data->color }}</td>
-                    <!-- Tambahkan kolom lain sesuai kebutuhan -->
                 </tr>
                 @endforeach
             
