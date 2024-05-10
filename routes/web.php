@@ -1,5 +1,6 @@
 <?php
 
+use app\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -38,4 +39,6 @@ Route::get('/shoppingCart', function () {
 Route::get('/dashboard', function () {
     return view('admin/dashboard', ['title' => 'Dashboard']);
 });
+
+Route::resource('admin.dashboard', \App\Http\Controllers\ProductController::class);
 

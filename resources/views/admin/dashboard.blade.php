@@ -12,15 +12,32 @@
             <thead>
                 <tr>
                     <th>No</th>
-                    <th>Image</th>
                     <th>Item Name</th>
-                    <th>Serial Number</th>
                     <th>Type</th>
+                    <th>Color</th>
                     <th>Price</th>
                     <th>Stock</th>
+                    <th>Image</th>
                     <th>Action</th>
                 </tr>
             </thead>
+            <tbody>
+                @foreach($products as $data)
+                <tr>
+                    <td>{{ $data->id }}</td>
+                    <td>{{ $data['name'] }}</td>
+                    <td>{{ $data->type }}</td>
+                    <td>{{ $data->color }}</td>
+                    <!-- Tambahkan kolom lain sesuai kebutuhan -->
+                </tr>
+                @endforeach
+            
+                @if ($products->isEmpty())
+                <tr>
+                    <td colspan="8">Tidak ada produk yang ditemukan.</td>
+                </tr>
+                @endif
+            </tbody>
         </table>
     </div>
 

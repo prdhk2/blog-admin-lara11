@@ -3,13 +3,22 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Product extends Model
 {
-    // Atur nama tabel jika perlu
-    protected $table = 'products';
+    use HasFactory;
+
 
     // Atau atur fillable properties
-    protected $fillable = ['name', 'category', 'price', 'image'];
+    protected $fillable = [
+        'name',
+        'type', 
+        'color', 
+        'price',
+        'created_at', 
+        'updated_at', 
+        'image'
+    ];
 }
 
